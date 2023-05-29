@@ -3,7 +3,7 @@
 1. **Components:**
 
 ```jsx
-javascriptCopy code
+
 import React from 'react';
 
 class MyComponent extends React.Component {
@@ -17,7 +17,7 @@ class MyComponent extends React.Component {
 1. **Functional Components:**
 
 ```jsx
-javascriptCopy code
+
 import React from 'react';
 
 function MyComponent() {
@@ -29,7 +29,7 @@ function MyComponent() {
 1. **Props:**
 
 ```jsx
-javascriptCopy code
+
 <MyComponent name="John" age={25} />
 
 ```
@@ -37,7 +37,7 @@ javascriptCopy code
 1. **State:**
 
 ```jsx
-javascriptCopy code
+
 class MyComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -54,7 +54,7 @@ class MyComponent extends React.Component {
 1. **Lifecycle Methods:**
 
 ```jsx
-javascriptCopy code
+
 componentDidMount() {
   // Executed after the component is mounted
 }
@@ -72,7 +72,7 @@ componentWillUnmount() {
 1. **Event Handling:**
 
 ```jsx
-javascriptCopy code
+
 <button onClick={handleClick}>Click Me</button>
 
 function handleClick() {
@@ -84,7 +84,7 @@ function handleClick() {
 1. **Conditional Rendering:**
 
 ```jsx
-javascriptCopy code
+
 render() {
   return (
     <div>
@@ -98,7 +98,7 @@ render() {
 1. **Lists and Keys:**
 
 ```jsx
-javascriptCopy code
+
 <ul>
   {items.map(item => <li key={item.id}>{item.name}</li>)}
 </ul>
@@ -108,7 +108,7 @@ javascriptCopy code
 1. **Forms:**
 
 ```jsx
-javascriptCopy code
+
 <input type="text" value={this.state.text} onChange={this.handleChange} />
 
 handleChange(event) {
@@ -120,7 +120,7 @@ handleChange(event) {
 1. **React Router:**
 
 ```jsx
-javascriptCopy code
+
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 function App() {
@@ -141,7 +141,7 @@ function App() {
 1. **Hooks:**
 
 ```jsx
-javascriptCopy code
+
 import React, { useState, useEffect } from 'react';
 
 function MyComponent() {
@@ -164,7 +164,7 @@ function MyComponent() {
 1. **Context API:**
 
 ```jsx
-javascriptCopy code
+
 import React, { createContext, useContext } from 'react';
 
 const MyContext = createContext();
@@ -187,7 +187,7 @@ function App() {
 1. **PropTypes:**
 
 ```jsx
-javascriptCopy code
+
 import PropTypes from 'prop-types';
 
 MyComponent.propTypes = {
@@ -200,7 +200,7 @@ MyComponent.propTypes = {
 1. **Default Props:**
 
 ```jsx
-javascriptCopy code
+
 MyComponent.defaultProps = {
   age: 18
 };
@@ -210,7 +210,7 @@ MyComponent.defaultProps = {
 1. **React Fragments:**
 
 ```jsx
-javascriptCopy code
+
 import React, { Fragment } from 'react';
 
 function MyComponent() {
@@ -227,7 +227,7 @@ function MyComponent() {
 1. **CSS-in-JS (Styled Components):**
 
 ```jsx
-javascriptCopy code
+
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -249,7 +249,7 @@ function MyComponent() {
 1. **Higher-Order Components (HOC):**
 
 ```jsx
-javascriptCopy code
+
 function withLogger(WrappedComponent) {
   return class extends React.Component {
     componentDidMount() {
@@ -269,7 +269,7 @@ const EnhancedComponent = withLogger(MyComponent);
 1. **Render Props:**
 
 ```jsx
-javascriptCopy code
+
 class MouseTracker extends React.Component {
   render() {
     return (
@@ -293,7 +293,7 @@ function MyComponent() {
 1. **Error Boundaries:**
 
 ```jsx
-javascriptCopy code
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -322,7 +322,7 @@ class ErrorBoundary extends React.Component {
 1. **React Hooks:**
 
 ```jsx
-javascriptCopy code
+
 import React, { useState, useEffect } from 'react';
 
 function MyComponent() {
@@ -345,7 +345,7 @@ function MyComponent() {
 1. **React Context with useContext and useReducer:**
 
 ```jsx
-javascriptCopy code
+
 import React, { createContext, useContext, useReducer } from 'react';
 
 const MyContext = createContext();
@@ -390,7 +390,7 @@ function App() {
 1. **React Router with Route Parameters:**
 
 ```jsx
-javascriptCopy code
+
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 function User({ match }) {
@@ -414,7 +414,7 @@ function App() {
 1. **React Hooks with Custom Hooks:**
 
 ```jsx
-javascriptCopy code
+
 import React, { useState, useEffect } from 'react';
 
 function useDocumentTitle(title) {
@@ -440,7 +440,7 @@ function MyComponent() {
 1. **React Performance Optimization with useMemo and useCallback:**
 
 ```jsx
-javascriptCopy code
+
 import React, { useState, useMemo, useCallback } from 'react';
 
 function ExpensiveComponent({ data }) {
@@ -467,7 +467,7 @@ function ExpensiveComponent({ data }) {
 1. **React Hooks for Form Handling with useState:**
 
 ```jsx
-javascriptCopy code
+
 import React, { useState } from 'react';
 
 function Form() {
@@ -493,7 +493,7 @@ function Form() {
 1. **Error Boundaries with componentDidCatch:**
 
 ```jsx
-javascriptCopy code
+
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -523,7 +523,7 @@ class ErrorBoundary extends React.Component {
 1. **React Context with Redux-like State Management:**
 
 ```jsx
-javascriptCopy code
+
 import React, { createContext, useContext, useReducer } from 'react';
 
 const MyContext = createContext();
@@ -568,7 +568,7 @@ function App() {
 1. **Server-side Rendering (SSR) with React and Next.js:**
 
 ```jsx
-javascriptCopy code
+
 // pages/index.js
 import React from 'react';
 
@@ -583,7 +583,7 @@ export default Home;
 1. **React Portals for Modal Dialogs or Modals:**
 
 ```jsx
-javascriptCopy code
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -612,7 +612,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 1. **React Testing Library for Unit Testing React Components:**
 
 ```jsx
-javascriptCopy code
+
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import MyComponent from './MyComponent';
@@ -628,7 +628,7 @@ test('renders MyComponent correctly', () => {
 1. **React Hooks for Context with useReducer:**
 
 ```jsx
-javascriptCopy code
+
 import React, { createContext, useContext, useReducer } from 'react';
 
 const MyContext = createContext();
@@ -673,7 +673,7 @@ function App() {
 1. **React Performance Optimization with memo:**
 
 ```jsx
-javascriptCopy code
+
 import React, { memo } from 'react';
 
 const MyComponent = memo(({ value }) => {
@@ -685,7 +685,7 @@ const MyComponent = memo(({ value }) => {
 1. **React.lazy and Suspense for Code Splitting:**
 
 ```jsx
-javascriptCopy code
+
 import React, { lazy, Suspense } from 'react';
 
 const MyComponent = lazy(() => import('./MyComponent'));
@@ -703,7 +703,7 @@ function App() {
 1. **React Hooks for Debouncing and Throttling:**
 
 ```jsx
-javascriptCopy code
+
 import React, { useState, useEffect } from 'react';
 
 function DebouncedInput() {
@@ -731,7 +731,7 @@ function DebouncedInput() {
 1. **React Fragments with Short Syntax:**
 
 ```jsx
-javascriptCopy code
+
 import React from 'react';
 
 function MyComponent() {
@@ -748,7 +748,7 @@ function MyComponent() {
 1. **React.memo with Custom Equality Function:**
 
 ```jsx
-javascriptCopy code
+
 import React, { memo } from 'react';
 
 const MyComponent = memo(
@@ -766,7 +766,7 @@ const MyComponent = memo(
 1. **React Testing Library with user Event:**
 
 ```jsx
-javascriptCopy code
+
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -780,3 +780,4 @@ test('handles button click correctly', () => {
 });
 
 ```
+![image](https://github.com/danielmarkjohn/react-all-you-need/assets/49250267/65bbe4c8-5616-4f77-945a-44334fe7c055)
